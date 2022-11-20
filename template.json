@@ -1,4 +1,30 @@
 {
 	"Actor": {},
-	"Item": {} 
+	"Item": {
+		"types":[
+			"weapon",
+			"armor",
+			"shield"
+		],
+		"templates": {
+			"itemDescription": {
+				"description": ""
+			}
+		},
+		"weapon":{
+			"templates": ["itemDescription"],
+			"damage": 0,
+			"tags": []
+		},
+		"armor":{
+			"templates": ["itemDescription"],
+			"defense": 0,
+			"tags": []
+		},
+		"shield":{
+			"templates": ["itemDescription"],
+			"block": 0,
+			"tags": []
+		}
+	} 
 }
