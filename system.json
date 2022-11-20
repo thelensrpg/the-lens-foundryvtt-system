@@ -1,0 +1,38 @@
+{
+	"id": "thelens",
+	"title": "The Lens TTRPG",
+	"description": "A FoundryVTT system for playing The Lens RPG games",
+
+	"version": "0.0.1",
+	"compatibility": {
+		"minimum": 9,
+		"verified": "10.290"
+	},
+
+	"authors": [
+		{
+			"name": "Chris Finch",
+			"url": "https://thelensrpg.io",
+			"email": "finch@thelensrpg.io",
+			"discord": "morduun#1192"
+		}
+	],
+
+	"esmodules": [
+		"thelens.js"
+	],
+	"styles": [
+		"thelens.css"
+	],
+	"packs": [
+
+	],
+	"languages": [
+
+	],
+	"gridDistance": 5,
+	"gridUnits": "ft",
+	"primaryTokenAttribute": "BODY",
+	"secondaryTokenAttribute": "SPIRIT",
+	"initiative": "@initiative"
+}
