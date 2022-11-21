@@ -1,0 +1,23 @@
+{
+	"thelens": {
+		"weapontypes": {
+			"light": "Light",
+			"heavy": "Heavy",
+			"1-handed": "1-handed",
+			"2-handed": "2-handed",
+			"edged": "Edged",
+			"crushing": "Crushing",
+			"piercing": "Piercing",
+			"thrown": "Thrown",
+			"binding": "Binding",
+			"entangling": "Entangling",
+			"reach": "Reach",
+			"ranged": "Ranged",
+			"ammo": "Ammo"
+		},
+		"weapon": {
+			"damage": "Damage",
+			"tags": "Tags"
+		}
+	}
+}
