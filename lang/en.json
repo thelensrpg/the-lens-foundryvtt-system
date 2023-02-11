@@ -21,11 +21,29 @@
 		},
 		"weapon":{
 			"attackQuality": "Attack Quality",
-			"damageQuality": "Dmg Quality",
+			"damageQuality": "Damage Quality",
 			"relatedAbility": "Related Ability",
 			"critical": "Critical",
 			"damage": "Damage",
-			"affects": "Aspect",
+			"affects": "Affects Aspect",
+			"bulk": "Bulk",
+			"workmanship": "Workmanship",
+			"tags": "Tags"
+		},
+		"armor": {
+			"deflectQuality": "Mitigation Quality",
+			"relatedAbility": "Related Ability",
+			"mitigation": "Mitigation",
+			"protects": "Protects Aspect",
+			"bulk": "Bulk",
+			"workmanship": "Workmanship",
+			"tags": "Tags"
+		},
+		"shield": {
+			"blockQuality": "Block Quality",
+			"relatedAbility": "Related Ability",
+			"block": "Block Value",
+			"affects": "Protects Aspect",
 			"bulk": "Bulk",
 			"workmanship": "Workmanship",
 			"tags": "Tags"

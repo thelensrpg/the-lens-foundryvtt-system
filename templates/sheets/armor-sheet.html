@@ -1,0 +1,81 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+    <div>
+        <table>
+            <tr>
+                <th>{{localize "thelens.armor.deflectQuality"}}</th>
+                <th>{{localize "thelens.weapon.relatedAbility"}}</th>
+            </tr>
+            <tr>
+                <td align="center">
+                    <select name="data.deflectQuality">
+                        {{#select data.deflectQuality}}
+                        {{#each config.qualities as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                    
+                </td>
+                <td align="center">
+                    <select name="data.relatedAbility">
+                        {{#select data.relatedAbility}}
+                        {{#each config.abilities as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td align="center">
+                </td>
+            </tr>
+            <tr>
+                <th>{{localize "thelens.armor.mitigation"}}</th>
+                <th>{{localize "thelens.armor.protects"}}</th>
+                <th></th>
+            </tr>
+            
+            <tr>
+                <td><input name="data.mitigation" type="text" value="{{data.mitigation}}" data-dtype="Number"/></td>
+                <td align="center">
+                    <select name="data.protects">
+                        {{#select data.protects}}
+                        {{#each config.aspects as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>{{localize "thelens.armor.workmanship"}}</th>
+                <th>{{localize "thelens.armor.tags"}}</th>
+                <th>{{localize "thelens.armor.bulk"}}</th>
+            </tr>
+            <tr>
+                <td align="center">
+                    <select name="data.workmanship">
+                        {{#select data.workmanship}}
+                        {{#each config.workmanship as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td>
+                    <input name="data.tags" type="text" value="{{data.tags}}" />
+                </td>
+                <td>
+                    <input name="data.bulk" type="text" value="{{data.bulk}}" data-dtype="Number" />
+                </td>
+            </tr>
+        </table>
+        <p><b>Description:</b></p>
+        <textarea name="data.description">{{data.description}}</textarea>
+    </div>
+</form>
