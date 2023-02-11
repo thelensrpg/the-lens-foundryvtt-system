@@ -1,12 +1,12 @@
 {
 	"id": "thelens",
 	"title": "The Lens TTRPG",
-	"description": "A FoundryVTT system for playing The Lens RPG games",
+	"description": "A FoundryVTT system for playing games based on The Lens TTRPG rules.",
 
 	"version": "0.0.1",
 	"compatibility": {
 		"minimum": 9,
-		"verified": "10.290"
+		"verified": "10.291"
 	},
 
 	"authors": [
@@ -27,6 +27,14 @@
 	"packs": [
 
 	],
+	"relationships": {
+		"systems": [],
+		"requires": [
+			{
+				"id": "barbrawl"
+			}
+		]
+	},
 	"languages": [
 		{
 			"lang": "en",
@@ -37,6 +45,6 @@
 	"gridDistance": 5,
 	"gridUnits": "ft",
 	"primaryTokenAttribute": "BODY",
-	"secondaryTokenAttribute": "SPIRIT",
+	"secondaryTokenAttribute": "LUCK",
 	"initiative": "@initiative"
 }
