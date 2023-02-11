@@ -1,0 +1,109 @@
+{
+	"Actor": {
+		"types": [
+			"character", 
+			"combatant", 
+			"vehicle"
+		],
+		"templates": {
+			"aspects": {
+				"body": {
+					"value": 0,
+					"max": 0,
+					"qualities": {
+						"strength": 0,
+						"agility": 0,
+						"endurance": 0
+					}
+				},
+				"mind": {
+					"value": 0,
+					"max": 0,
+					"qualities": {
+						"knowledge": 0,
+						"wisdom": 0,
+						"devotion": 0
+					}
+				},
+				"spirit": {
+					"value": 0,
+					"max": 0,
+					"qualities": {
+						"presence": 0,
+						"intuition": 0,
+						"faith": 0
+					}
+				},
+				"luck": {
+					"value": 0,
+					"max": 0
+				},
+				"void": {
+					"value": 0,
+					"max": 0
+				},
+				"favor": {
+					"value": 0,
+					"max": 0
+				}
+			},
+			"background": {
+				"biography": "",
+				"hairColor": "brown"
+			},
+			"itemStats": { 
+				"type": {
+					"label": "blank",
+					"value": -1
+				},
+				"workmanship": {
+					"label": "crude",
+					"value": -1
+				},
+				"tags": [],
+				"description": "[blank]"
+			}
+		},
+		"character": {
+			"templates": ["background", "aspects"]
+		},
+		"combatant": {
+			"templates": ["aspects"]
+		},
+		"vehicle": {
+			"templates": ["aspects"]
+		}
+	},
+
+	"Item": {
+		"types":[
+			"weapon",
+			"armor",
+			"shield",
+			"misc"
+		],
+		"templates": {
+			"itemDescription": {
+				"description": ""
+			}
+		},
+		"weapon":{
+			"templates": ["itemStats"],
+			"damage": "1d4",
+			"crit": "2d4"
+		},
+		"armor":{
+			"templates": ["itemStats"],
+			"rating": 1
+		},
+		"shield":{
+			"templates": ["itemStats"],
+			"block": 0,
+			"tags": []
+		},
+		"misc": {
+			"templates": ["itemStats"],
+			"tags": []
+		}
+	} 
+}
