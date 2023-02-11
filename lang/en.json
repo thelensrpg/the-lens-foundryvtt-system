@@ -1,23 +1,51 @@
 {
 	"thelens": {
-		"weapontypes": {
-			"light": "Light",
-			"heavy": "Heavy",
-			"1-handed": "1-handed",
-			"2-handed": "2-handed",
-			"edged": "Edged",
-			"crushing": "Crushing",
-			"piercing": "Piercing",
-			"thrown": "Thrown",
-			"binding": "Binding",
-			"entangling": "Entangling",
-			"reach": "Reach",
-			"ranged": "Ranged",
-			"ammo": "Ammo"
+		"aspects": {
+			"body": "BODY",
+			"mind": "MIND",
+			"spirit": "SPIRIT",
+			"luck": "LUCK",
+			"void": "VOID",
+			"favor": "FAVOR"
 		},
-		"weapon": {
+		"qualities": {
+			"strength": "Strength",
+			"agility": "Agility",
+			"endurance": "Endurance",
+			"knowledge": "Knowledge",
+			"wisdom": "Wisdom",
+			"devotion": "Devotion",
+			"presence": "Presence",
+			"intuition": "Intuition",
+			"faith": "Faith"
+		},
+		"weapon":{
+			"attackQuality": "Attack Quality",
+			"damageQuality": "Dmg Quality",
+			"relatedAbility": "Related Ability",
+			"critical": "Critical",
 			"damage": "Damage",
+			"affects": "Aspect",
+			"bulk": "Bulk",
+			"workmanship": "Workmanship",
 			"tags": "Tags"
+		},
+		"abilities": {
+			"martial": {
+				"weaponUse": "Weapon Use",
+				"armorUse": "Armor Use",
+				"shieldUse": "Shield Use",
+				"maneuvering": "Maneuvering"
+			}
+		},
+		"workmanship": {
+			"crude": "Crude",
+			"common": "Common",
+			"uncommon": "Uncommon",
+			"rare": "Rare",
+			"epic": "Epic",
+			"legendary": "Legendary",
+			"singular": "Singular"
 		}
 	}
 }

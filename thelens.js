@@ -1,5 +1,5 @@
-import {thelens} from "./module/config.js";
-import TheLensItemSheet from "./modules/TheLensItemSheet.js"
+import {thelens} from "./modules/config.js";
+import TheLensItemSheet from "./modules/TheLensItemSheet.js";
 
 Hooks.once("init", function() {
 	console.log("the-lens | Initializing The Lens TTRPG System...");
@@ -7,5 +7,7 @@ Hooks.once("init", function() {
 	CONFIG.thelens = thelens;
 
 	Items.unregisterSheet("core", ItemSheet);
-	Items.registerSheet("thelens", TheLensItemSheet, {makeDefault: true });
+	Items.registerSheet("thelens", TheLensItemSheet, {makedefault: true});
+
+
 });

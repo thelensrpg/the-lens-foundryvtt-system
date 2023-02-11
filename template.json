@@ -1,5 +1,53 @@
 {
 	"Actor": {},
 
-	"Item": {} 
+	"Item": {
+		"types": [
+			"weapon",
+			"armor",
+			"shield",
+			"ammo"
+		],
+		"templates": {
+			"itemDescription": {
+				"description": "[blank]"
+			}
+		},
+		"weapon":{
+			"templates": ["itemDescription"],
+			"attackQuality": "Agility",
+			"damageQuality": "Strength",
+			"relatedAbility": "Weapon-Use",
+			"critical": "2d2",
+			"damage": "1d2",
+			"affects": "BODY",
+			"bulk": 5,
+			"workmanship": -1,
+			"tags": ["melee", "quick"]
+		},
+		"armor": {
+			"templates": ["itemDescription"],
+			"RelatedAbility": "Armor-Use",
+			"DeflectQuality": "Endurance",
+			"Mitigation": 0,
+			"Bulk": 10,
+			"Workmanship": 0,
+			"Tags": ["leather", "light", "quiet"]
+		},
+		"shield": {
+			"templates": ["itemDescription"],
+			"RelatedAbility": "Shield-Use",
+			"BlockQuality": "Strength",
+			"Block": 0,
+			"Bulk": 5,
+			"Workmanship": -1,
+			"Tags": ["wooden", "light"]
+		},
+		"ammo": {
+			"templates": ["itemDescription"],
+			"Quiver": "1d2",
+			"Workmanship": -1,
+			"Tags": ["wooden", "piercing"]
+		}
+	} 
 }

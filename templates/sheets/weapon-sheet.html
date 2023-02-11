@@ -6,13 +6,84 @@
     <div>
         <table>
             <tr>
-                <th>{{localize "thelens.weapon.tags"}}</th>
+                <th>{{localize "thelens.weapon.attackQuality"}}</th>
+                <th>{{localize "thelens.weapon.damageQuality"}}</th>
+                <th>{{localize "thelens.weapon.relatedAbility"}}</th>
+            </tr>
+            <tr>
+                <td align="center">
+                    <select name="data.attackQuality">
+                        {{#select data.attackQuality}}
+                        {{#each config.qualities as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                    
+                </td>
+                <td align="center">
+                    <select name="data.damageQuality">
+                        {{#select data.damageQuality}}
+                        {{#each config.qualities as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td align="center">
+                    <select name="data.relatedAbility">
+                        {{#select data.relatedAbility}}
+                        {{#each config.abilities as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+            <tr>
                 <th>{{localize "thelens.weapon.damage"}}</th>
-                <th>{{localize "thelens.weapon.crit"}}</th>
-                <th>{{localize "thelens.weapon.type.label"}}</th>
-                <th>{{localize "thelens.weapon.workmanship.label"}}</th>
-                <th>{{localize "thelens.weapon.description"}}</th>
+                <th>{{localize "thelens.weapon.critical"}}</th>
+                <th>{{localize "thelens.weapon.affects"}}</th>
+            </tr>
+            
+            <tr>
+                <td><input name="data.damage" type="text" value="{{data.damage}}"  /></td>
+                <td><input name="data.critical" type="text" value="{{data.critical}}"  /></td>
+                <td align="center">
+                    <select name="data.affects">
+                        {{#select data.affects}}
+                        {{#each config.aspects as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th>{{localize "thelens.weapon.workmanship"}}</th>
+                <th>{{localize "thelens.weapon.tags"}}</th>
+                <th>{{localize "thelens.weapon.bulk"}}</th>
+            </tr>
+            <tr>
+                <td align="center">
+                    <select name="data.workmanship">
+                        {{#select data.workmanship}}
+                        {{#each config.workmanship as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td>
+                    <input name="data.tags" type="text" value="{{data.tags}}" />
+                </td>
+                <td>
+                    <input name="data.bulk" type="text" value="{{data.bulk}}" data-dtype="Number" />
+                </td>
             </tr>
         </table>
-    </div>>
+        <p><b>Description:</b></p>
+        <textarea name="data.description">{{data.description}}</textarea>
+    </div>
 </form>
