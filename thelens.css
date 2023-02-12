@@ -1,0 +1,55 @@
+.thelens .sheet-header .profile-img {
+	flex: 0 0 150px;
+	height: 150px;
+	margin-right: 10px;
+  }
+
+  .thelens .resource input {
+	width: 35px;
+	height: 28px;
+	align-content: center;
+  }
+
+  .thelens .quality input {
+	width: 35px;
+	height: 28px;
+  }
+
+  .thelens .thickborder {
+	align-items: center;
+	background: rgb(129, 36, 36);
+	color:  rgb(158, 158, 158);
+	border: 0px solid hsl(0, 0%, 50%);
+	border-radius: 2px;
+	padding: 0px 0px;
+	min-height: 5px;
+  }
+
+  .thelens .lightborder {
+	align-items: center;
+	background: rgb(95, 19, 19);
+	color:  rgb(190, 190, 190);
+	border: 0px solid hsl(0, 0%, 50%);
+	border-radius: 2px;
+	padding: 0px 0px;
+	min-width: 2px;
+  }
+
+  .thelens .aspect-section {
+	background: rgb(80, 0, 0);
+	color:  rgb(188, 202, 127);
+  }
+
+  .thelens .sheet-header {
+	background: rgb(129, 36, 36);
+	color:  rgb(49, 49, 49);
+  }
+
+  .thelens .charname {
+	background: rgb(80, 0, 0);
+	color:  rgb(212, 212, 212);
+  }
+
+  .thelens input, select, textarea {
+    color: rgb(188, 202, 127);
+}

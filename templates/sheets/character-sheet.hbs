@@ -1,0 +1,103 @@
+<form class="{{cssClass}}" autocomplete="off">
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+		<table>
+			<tr>
+				<th>
+					<img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}" height="200" />
+				</th>
+				<th>
+				<h1 class="charname">
+					<input name="name" type="text" value="{{data.name}}" placeholder="Name" />
+				</h1>
+				</th>
+			</tr>
+		</table>
+	</header>
+	<div class="aspect-section">
+		<table>
+			<tr>
+				<th>ASPECT</th>
+				<td align="left">Cur.</td>
+				<td align="left">Max.</td>
+				<th class="lightborder"></th>
+				<th colspan="3" align="center">Power</th>
+				<th class="lightborder"></th>
+				<th colspan="3" align="center">Precision</th>
+				<th class="lightborder"></th>
+				<th colspan="3" align="center">Perseverance</th>
+			</tr>
+
+			<tr class="thickborder"><th colspan="15"></th></tr>
+
+			<tr>
+				<th>BODY</th>
+				<td class="resource"><input type="number" name="systemData.body.value" value="{{systemData.body.value}}"/></td>
+				<td class="resource"><input type="number" name="systemData.body.max" value="{{systemData.body.max}}"/></td>
+				<td class="lightborder"></td>
+				<th>Strength</th>
+				<td class="quality"><input type="number" name="systemData.body.power.value" value="{{systemData.body.power.value}}"/></td>
+				<td class="quality">+1</td>
+				<td class="lightborder"></td>
+				<th>Agility</th>
+				<td class="quality"><input type="number" name="systemData.body.precision.value" value="{{systemData.body.precision.value}}"/></td>
+				<td class="quality">+1</td>
+				<td class="lightborder"></td>
+				<th>Endurance</th>
+				<td class="quality"><input type="number" name="systemData.body.perseverance.value" value="{{systemData.body.perseverance.value}}"/></td>
+				<td class="quality">+1</td>
+			</tr>
+			<tr class="thickborder"><th colspan="15"></th></tr>
+<!--
+			<tr>
+				<th><nobr>Strength: <input name="data.body.power.value" type="number" value="{{data.body.power.value}}"  /></nobr></th>
+				<th><nobr>Agility: <input name="data.body.precision.value" type="number" value="{{data.body.precision.value}}"  /></nobr></th>
+				<th><nobr>Endurance: <input name="data.body.perseverance.value" type="number" value="{{data.body.perseverance.value}}"  /></nobr></th>
+			</tr>
+-->
+			<tr>
+				<th>MIND</th>
+				<td class="resource"><input type="number" name="systemData.mind.value" maxlength="2" value="{{systemData.mind.value}}"/></td>
+				<td class="resource"><input type="number" name="systemData.mind.max" width="20" value="{{systemData.mind.max}}"/></td>
+				<td class="lightborder"></td>
+				<th align="center">Knowledge</th>
+				<td class="quality"><input type="number" name="systemData.mind.power.value" value="{{systemData.mind.power.value}}"/></td>
+				<td class="quality">+1</td>
+				<td class="lightborder"></td>
+				<th>Wisdom</th>
+				<td class="quality"><input type="number" name="systemData.mind.precision.value" value="{{systemData.mind.precision.value}}"/></td>
+				<td class="quality">+1</td>
+				<td class="lightborder"></td>
+				<th>Devotion</th>
+				<td class="quality"><input type="number" name="systemData.mind.perseverance.value" value="{{systemData.mind.perseverance.value}}"/></td>
+				<td class="quality">+1</td>
+			</tr>
+
+			<tr class="thickborder"><th colspan="15"></th></tr>
+
+			<tr>
+				<th>SPIRIT</th>
+				<td class="resource"><input type="number" name="systemData.spirit.value" maxlength="2" value="{{systemData.spirit.value}}"/></td>
+				<td class="resource"><input type="number" name="systemData.spirit.max" width="20" value="{{systemData.spirit.max}}"/></td>
+				<td class="lightborder"></td>
+				<th align="center">Presence</th>
+				<td class="quality"><input type="number" name="systemData.spirit.power.value" value="{{systemData.spirit.power.value}}"/></td>
+				<td class="quality">+1</td>
+				<td class="lightborder"></td>
+				<th>Intuition</th>
+				<td class="quality"><input type="number" name="systemData.spirit.precision.value" value="{{systemData.spirit.precision.value}}"/></td>
+				<td class="quality">+1</td>
+				<td class="lightborder"></td>
+				<th>Faith</th>
+				<td class="quality"><input type="number" name="systemData.spirit.perseverance.value" value="{{systemData.spirit.perseverance.value}}"/></td>
+				<td class="quality">+1</td>
+			</tr>
+
+			<tr class="thickborder"><th colspan="15"></th></tr>
+
+		</table>
+        
+
+    </div>
+</form>
+

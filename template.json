@@ -1,12 +1,116 @@
 {
-	"Actor": {},
+	"Actor": {
+		"types": [
+			"character",
+			"companion",
+			"minion",
+			"thug",
+			"rival",
+			"nemesis"
+		],
+		"templates": {
+			"aspects": {
+				"body": {
+					"value": 0,
+					"max": 0,
+					"power": {
+						"name": "strength",
+						"value": 0
+					},
+					"precision": {
+						"name": "agility",
+						"value": 0
+					},
+					"perseverance": {
+						"name": "endurance",
+						"value": 0
+					}
+				},
+				"mind": {
+					"value": 0,
+					"max": 0,
+					"power": {
+						"name": "knowledge",
+						"value": 0
+					},
+					"precision": {
+						"name": "wisdom",
+						"value": 0
+					},
+					"perseverance": {
+						"name": "devotion",
+						"value": 0
+					}	
+				},
+				"spirit": {
+					"value": 0,
+					"max": 0,
+					"power": {
+						"name": "presence",
+						"value": 0
+					},
+					"precision": {
+						"name": "intuition",
+						"value": 0
+					},
+					"perseverance": {
+						"name": "faith",
+						"value": 0
+					}
+				},
+				"luck": { 
+					"value": 0,
+					"max": 0
+				},
+				"void": {
+					"value": 0,
+					"max": 0
+				},
+				"favor": {
+					"value": 0,
+					"max": 0
+				}
+			},
+			"NPCs": {
+				"momentum": 0,
+				"defense": 0,
+				"abjuration": 0,
+				"initiative": "3d2",
+				"morale": 0
+			}
+		},
+		"character": {
+			"templates": ["aspects"]
+		},
+		"companion": {
+			"templates": ["aspects", "NPCs"]
+		},
+		"minion": {
+			"templates": ["NPCs"]
+		},
+		"thug": {
+			"templates": ["aspects", "NPCs"]
+		},
+		"rival": {
+			"templates": ["aspects", "NPCs"]
+		},
+		"nemesis": {
+			"templates": ["aspects", "NPCs"]
+		}
+	},
 
 	"Item": {
 		"types": [
 			"weapon",
 			"armor",
 			"shield",
-			"ammo"
+			"ammo",
+			"perk",
+			"quirk",
+			"species",
+			"subspecies",
+			"ability",
+			"npc-attack"
 		],
 		"templates": {
 			"itemDescription": {
@@ -42,6 +146,62 @@
 		"ammo": {
 			"templates": ["itemDescription"],
 			"quiver": "1d2"
+		},
+		"perk": {
+			"condition": "",
+			"benefit": "",
+			"active": false
+		},
+		"quirk": {
+			"condition": "",
+			"benefit": "",
+			"drawback": "",
+			"active": false
+		},
+		"species": {
+			"commonName": "",
+			"background": "",
+			"freebies": [
+				"ability-1",
+				"ability-2"
+			],
+			"strengths": [
+				"category-1"
+			],
+			"weaknesses": [
+				"category-1"
+			],
+			"subspecies": {
+			}
+		},
+		"subspecies": {
+			"name": "",
+			"parent": "",
+			"description": "",
+			"freebies": [
+				"freebie-1",
+				"freebie-2"
+			]
+		},
+		"ability": {
+			"category": "none",
+			"aspect": "BODY",
+			"quality": "Strength",
+			"effect": "none",
+			"training": "2d2"
+		},
+		"campaign": {
+			"dice": "2d2",
+			"points": 2,
+			"max-mastery": "Novice",
+			"faction-dice": 0
+		},
+		"npc-attack": {
+			"description": "",
+			"rating": 0,
+			"range": 0,
+			"damage": "3d2",
+			"tags": []
 		}
 	} 
 }
