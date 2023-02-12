@@ -6,7 +6,7 @@ export default class TheLensItemSheet extends ItemSheet {
 	getData() {
 
 		const baseData = super.getData();
-
+ 
 		let sheetData = {
 			owner: this.item.isOwner,
 			editable: this.isEditable,
