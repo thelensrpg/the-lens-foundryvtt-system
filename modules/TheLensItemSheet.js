@@ -1,4 +1,13 @@
 export default class TheLensItemSheet extends ItemSheet {
+	
+	static get defaultOptions() {
+		return mergeObject(super.defaultOptions, {
+			width: 530,
+			height: 400,
+			classes: ["thelens", "sheet", "item"]
+		});
+	}
+	
 	get template() {
 		return `systems/thelens/templates/sheets/${this.item.data.type}-sheet.hbs`
 	}

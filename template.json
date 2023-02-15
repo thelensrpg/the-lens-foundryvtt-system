@@ -1,76 +1,10 @@
 {
 	"Actor": {
 		"types": [
-			"character",
-			"companion",
-			"minion",
-			"thug",
-			"rival",
-			"nemesis"
+			"hero"
 		],
+		"htmlFields": ["biography"],
 		"templates": {
-			"aspects": {
-				"body": {
-					"value": 0,
-					"max": 0,
-					"power": {
-						"name": "strength",
-						"value": 0
-					},
-					"precision": {
-						"name": "agility",
-						"value": 0
-					},
-					"perseverance": {
-						"name": "endurance",
-						"value": 0
-					}
-				},
-				"mind": {
-					"value": 0,
-					"max": 0,
-					"power": {
-						"name": "knowledge",
-						"value": 0
-					},
-					"precision": {
-						"name": "wisdom",
-						"value": 0
-					},
-					"perseverance": {
-						"name": "devotion",
-						"value": 0
-					}	
-				},
-				"spirit": {
-					"value": 0,
-					"max": 0,
-					"power": {
-						"name": "presence",
-						"value": 0
-					},
-					"precision": {
-						"name": "intuition",
-						"value": 0
-					},
-					"perseverance": {
-						"name": "faith",
-						"value": 0
-					}
-				},
-				"luck": { 
-					"value": 0,
-					"max": 0
-				},
-				"void": {
-					"value": 0,
-					"max": 0
-				},
-				"favor": {
-					"value": 0,
-					"max": 0
-				}
-			},
 			"NPCs": {
 				"momentum": 0,
 				"defense": 0,
@@ -79,23 +13,47 @@
 				"morale": 0
 			}
 		},
-		"character": {
-			"templates": ["aspects"]
-		},
-		"companion": {
-			"templates": ["aspects", "NPCs"]
-		},
-		"minion": {
-			"templates": ["NPCs"]
-		},
-		"thug": {
-			"templates": ["aspects", "NPCs"]
-		},
-		"rival": {
-			"templates": ["aspects", "NPCs"]
-		},
-		"nemesis": {
-			"templates": ["aspects", "NPCs"]
+		"hero": {
+			"biography": "[none]",
+			"body": {
+				"value": 0,
+				"min": 0,
+				"max": 0,
+				"strength": 0,
+				"agility": 0,
+				"endurance": 0
+			},
+			"mind": {
+				"value": 0,
+				"min": 0,
+				"max": 0,
+				"knowledge": 0,
+				"wisdom": 0,
+				"devotion": 0
+			},
+			"spirit": {
+				"value": 0,
+				"min": 0,
+				"max": 0,
+				"presence": 0,
+				"intuition": 0,
+				"faith": 0
+			},
+			"luck": {
+				"value": 0,
+				"min": 0,
+				"max": 0
+			},
+			"void": {
+				"value": 0,
+				"min": 0,
+				"max": 0
+			},
+			"favor": {
+				"value": 0,
+				"min": 0,
+				"max": 0
+			}
 		}
 	},
 

@@ -3,7 +3,7 @@
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
     </header>
-    <div>
+    <div class="aspect-section">
         <table>
             <tr>
                 <th>{{localize "thelens.shield.blockQuality"}}</th>
@@ -39,7 +39,7 @@
             </tr>
             
             <tr>
-                <td><input name="data.block" type="text" value="{{data.block}}"  data-dtype="Number" /></td>
+                <th class="resource"><input name="data.block" type="text" value="{{data.block}}"  data-dtype="Number" /></th>
                 <td align="center">
                     <select name="data.affects">
                         {{#select data.affects}}
@@ -55,7 +55,7 @@
             <tr>
                 <th>{{localize "thelens.weapon.workmanship"}}</th>
                 <th>{{localize "thelens.weapon.tags"}}</th>
-                <th>{{localize "thelens.weapon.bulk"}}</th>
+                <th >{{localize "thelens.weapon.bulk"}}</th>
             </tr>
             <tr>
                 <td align="center">
@@ -70,9 +70,9 @@
                 <td>
                     <input name="data.tags" type="text" value="{{data.tags}}" />
                 </td>
-                <td>
+                <th class="resource">
                     <input name="data.bulk" type="text" value="{{data.bulk}}" data-dtype="Number" />
-                </td>
+                </th>
             </tr>
         </table>
         <p><b>Description:</b></p>
